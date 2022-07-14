@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debonair Group | About </title>
+
+    <!-- Favicon -->
+
+    <!-- Open Graph -->
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../dist/all.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/swiper.css" />
+
+    <!-- Custom Fonts -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- header -->
+    <header class="h-20 w-full flex items-center justify-center position relative header">
+        <!-- Header Inner -->
+       <section class="h-full w-11/12 md:w-10/12 flex flex-col items-center justify-center space-y-5">
+            <!-- Header Nav -->
+            <nav class="h-auto w-full flex items-center justify-between">
+                <!-- Logo -->
+                <div class="h-auto w-auto flex items-center justify-start space-x-10">
+                    <a href="../index.html" class="font-medium text-lg">
+                        <img alt="" src="../assets/img/logo.png" style="max-width: 75px;" />
+                    </a>
+                    <!-- Menu -->
+                    <ul class="h-full w-full flex items-center justify-end space-x-3 hideOnMobile desktopMenu">
+                        <li class="position relative">
+                            <a 
+                            href="../index.html" 
+                            target="_self" 
+                            rel="noreferrer" 
+                            class="font-normal text-md text-gray-800">Home</a>
+                        </li>
+                        <li class="position relative">
+                            <a href="./about.html" target="_self" rel="noreferrer" 
+                            class="font-medium text-md text-[#336699] 
+                            border-b-2 border-[#336699] pb-1">About</a>
+                        </li>
+                        <li class="position relative">
+                            <a href="./solutions.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Solutions</a>
+                            <!-- Dropdown -->
+                            <div class="h-0 w-60 bg-white shadow-lg position absolute top-full mt-1 transform -translate-x-[35%]
+                            flex flex-col items-start justify-start space-y-3 border-t-2 border-[#336699] py-2 link-dropdown">
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                    Online Training School
+                                </a>
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                    Consultation
+                                </a>
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                   Learning Management System
+                                </a>
+                            </div>
+                        </li>
+                        <li class="position relative">
+                            <a href="./resources.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Resources</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Menu -->
+                <ul class="h-full w-full flex items-center justify-end space-x-5 hideOnMobile">
+                    <li>
+                        <a href="./contact.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Support</a>
+                    </li>
+                    <li>
+                        <button class="h-10 bg-[#336699] text-white rounded-md px-5">Make Inquiry</button>
+                    </li>
+                </ul>
+
+                <!-- Drawer -->
+                <div id="hamburger" class="h-10 w-8 flex flex-col items-start justify-center space-y-1 hideOnDesktop">
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                </div>
+
+                <!-- Mobile Menu -->
+                <ul 
+                id="drawer"
+                class="h-full w-full bg-white rounded-md flex flex-col items-center justify-center space-y-5 
+                position fixed top-0 right-0 z-100 shadow-lg transform -translate-y-[300%] transition duration-700 hideOnDesktop" 
+                >
+                    <!-- Close -->
+                    <div class="h-10 w-10 position absolute top-3 right-2 font-medium" id="closeDrawer">
+                        <i class="la la-times-circle text-2xl"></i>
+                    </div>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a 
+                        href="../index.html" 
+                        target="_self" 
+                        rel="noreferrer" 
+                        class="font-normal text-lg text-gray-800 pb-1">Home</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./about.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-[#336699]
+                        border-b-4 border-[#336699]">About</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./solutions.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-gray-800">Solutions</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./resources.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-gray-800">Resources</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./contact.html" class="h-10 bg-[#336699] text-white text-lg rounded-md px-10
+                        flex items-center justify-center">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+       </section>
+    </header>
+
+    <!-- content -->
+    <main class="h-auto w-full overflow-hidden">
+        <!-- Hero -->
+        <section id="sectionOne" class="h-auto md:h-[32rem] w-full flex items-center justify-center mt-10">
+            <!-- Inner -->
+            <div class="h-full w-11/12 md:w-10/12 flex flex-col md:flex-row items-center justify-center">
+                <!-- Left -->
+                <div class="h-full w-full md:w-[60%] flex flex-col items-start justify-center">
+                    <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="w-full md:w-8/12 text-3xl md:text-7xl font-bold leading-snug md:leading-1 text-black">
+                    We’re changing the whole game
+                    </h2>
+                    <p 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    class="w-full md:w-6/12 my-8 text-lg font-normal text-gray-500 leading-normal">
+                    Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+                <!-- Right -->
+                <div class="h-96 md:h-full w-full md:w-[40%] flex flex-row items-center justify-end">
+                   <img 
+                   data-aos="zoom-out"
+                   data-aos-duration="1000" 
+                   data-aos-delay="500"
+                   src="../assets/img/about-mockup.png" alt="Mockup" style="height: auto; width: 500px; position: absolute;" class="md:right-[100px]" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Section One -->
+        <section class="h-auto w-full flex items-center justify-center my-20 md:my-32">
+            <!-- inner -->
+            <div class="h-full w-full md:w-10/12 flex flex-col items-center justify-center space-y-20">
+                <div class="h-auto w-full flex flex-col items-center justify-center space-y-5">
+                    <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="50"
+                    class="w-11/12 md:w-4/12 font-medium text-3xl text-center leading-10">We help people unlock their digital potential</h2>
+                    <p 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="w-11/12 md:w-5/12 text-md text-gray-500 text-center">Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+
+                <section class="h-auto w-10/12 grid grid-colds-1 md:grid-cols-2 gap-5">
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="150"
+                    class="h-auto w-full flex flex-col items-start justify-center p-5 md:p-10 space-y-3 bg-[#41DB63]/10">
+                        <h3 class="font-medium text-xl text-[#41DB63]">Lorem Ipsum Donor</h3>
+                        <p class="w-full md:w-10/12 text-gray-600 text-md leading-7">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                     <!-- Block -->
+                     <div 
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-delay="200"
+                     class="h-auto w-full flex flex-col items-start justify-center p-5 md:p-10 space-y-3 bg-[#E2EE5B]/10">
+                        <h3 class="font-medium text-xl text-[#E2EE5B]">Lorem Ipsum Donor</h3>
+                        <p class="w-full md:w-10/12 text-gray-600 text-md leading-7">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                     <!-- Block -->
+                     <div 
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-delay="250"
+                     class="h-auto w-full flex flex-col items-start justify-center p-5 md:p-10 space-y-3 bg-[#ED7643]/10">
+                        <h3 class="font-medium text-xl text-[#ED7643]">Lorem Ipsum Donor</h3>
+                        <p class="w-full md:w-10/12 text-gray-600 text-md leading-7">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                     <!-- Block -->
+                     <div 
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-delay="300"
+                     class="h-auto w-full flex flex-col items-start justify-center p-5 md:p-10 space-y-3 bg-[#9453D4]/10">
+                        <h3 class="font-medium text-xl text-[#9453D4]">Lorem Ipsum Donor</h3>
+                        <p class="w-full md:w-10/12 text-gray-600 text-md leading-7">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Section Two -->
+        <section class="h-auto w-full flex items-center justify-center my-20 md:my-32">
+            <!-- inner -->
+            <div class="h-full w-full md:w-10/12 flex flex-col items-center justify-center space-5 md:space-y-20">
+                <div class="h-auto w-full flex flex-col items-center justify-center space-y-5">
+                    <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="50"
+                    class="w-full md:w-4/12 font-medium text-3xl text-center leading-10">Meet Our Team</h2>
+                    <p 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="w-11/12 md:w-5/12 text-md text-gray-500 text-center">Lorem ipsum dolor sit amet,  adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </div>
+
+                <section class="h-auto w-10/12 md:w-10/12 grid-cols-1 md:grid grid-cols-4 gap-5">
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="50"
+                    class="h-auto w-full flex flex-col items-center justify-center space-y-5 mt-12 md:mt-0">
+                        <!-- Img -->
+                        <div class="h-auto md:h-72 w-full rounded-md flex items-center justify-center 
+                        overflow-hidden">
+                            <img src="../assets/img/teams/1.png" alt="" class="img-fluid hover:shadow-2xl transition duration-700" />
+                        </div>
+                        <!-- Content -->
+                        <div 
+                        class="h-auto md:h-16 w-full flex flex-col items-start justify-start">
+                            <!-- Name -->
+                            <h3 
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="50"
+                            class="font-medium text-2xl text-black">Kevin Mardon</h3>
+                            <!-- Role -->
+                            <p 
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="100"
+                            class="w-full text-gray-600 text-sm leading-7">
+                                Product Manager
+                            </p>
+                            <!-- Socials -->
+                            <div 
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                            data-aos-delay="150"
+                            class="flex items-center justify-start space-x-4 mt-5">
+                                <i class="la la-facebook cursor-pointer h-5 text-gray-600 
+                                flex items-center justify-end text-2xl font-normal">
+                                </i>
+                                <i class="la la-linkedin cursor-pointer h-5 text-gray-600 
+                                flex items-center justify-end text-2xl font-normal">
+                                </i>
+                                <i class="la la-instagram cursor-pointer h-5 text-gray-600 
+                                flex items-center justify-end text-2xl font-normal">
+                                </i>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="h-auto w-full flex flex-col items-center justify-center space-y-5 mt-12 md:mt-0">
+                        <!-- Img -->
+                        <div class="h-auto md:h-72 w-full rounded-md flex items-center justify-center 
+                        overflow-hidden">
+                            <img src="../assets/img/teams/2.png" alt="" class="img-fluid hover:shadow-2xl transition duration-700" />
+                        </div>
+                        <!-- Content -->
+                         <div 
+                         class="h-auto md:h-16 w-full flex flex-col items-start justify-start">
+                             <!-- Name -->
+                             <h3 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="50"
+                             class="font-medium text-2xl text-black">Mark Luther</h3>
+                             <!-- Role -->
+                             <p 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="100"
+                             class="w-full text-gray-600 text-sm leading-7">
+                                CEO/Founder
+                             </p>
+                             <!-- Socials -->
+                             <div 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="150"
+                             class="flex items-center justify-start space-x-4 mt-5">
+                                 <i class="la la-facebook cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                                 <i class="la la-linkedin cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                                 <i class="la la-instagram cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                             
+                             </div>
+                         </div>
+                     </div>
+
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="150"
+                    class="h-auto w-full flex flex-col items-center justify-center space-y-5 mt-12 md:mt-0">
+                        <!-- Img -->
+                        <div class="h-auto md:h-72 w-full rounded-md flex items-center justify-center
+                        overflow-hidden">
+                            <img src="../assets/img/teams/3.png" alt="" class="img-fluid hover:shadow-2xl transition duration-700" />
+                        </div>
+                        <!-- Content -->
+                         <div 
+                         class="h-auto md:h-16 w-full flex flex-col items-start justify-start">
+                             <!-- Name -->
+                             <h3 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="50"
+                             class="font-medium text-2xl text-black">Kate Anderson</h3>
+                             <!-- Role -->
+                             <p 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="100"
+                             class="w-full text-gray-600 text-sm leading-7">
+                                Sales Representative
+                             </p>
+                             <!-- Socials -->
+                             <div 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="150"
+                             class="flex items-center justify-start space-x-4 mt-5">
+                                 <i class="la la-facebook cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                                 <i class="la la-linkedin cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                                 <i class="la la-instagram cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                             
+                             </div>
+                         </div>
+                     </div>
+
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    class="h-auto w-full flex flex-col items-center justify-center space-y-5 mt-12 md:mt-0">
+                         <!-- Img -->
+                         <div class="h-auto md:-72 w-full rounded-md flex items-center justify-center 
+                         overflow-hidden">
+                            <img src="../assets/img/teams/4.png" alt="" class="img-fluid hover:shadow-2xl transition duration-700" />
+                        </div>
+                        <!-- Content -->
+                         <div 
+                         class="h-auto md:h-16 w-full flex flex-col items-start justify-start">
+                             <!-- Name -->
+                             <h3 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="50"
+                             class="font-medium text-2xl text-black">Drew Collins</h3>
+                             <!-- Role -->
+                             <p 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="100"
+                             class="w-full text-gray-600 text-sm leading-7">
+                                Marketing Lead
+                             </p>
+                             <!-- Socials -->
+                             <div 
+                             data-aos="fade-up"
+                             data-aos-duration="1000"
+                             data-aos-delay="150"
+                             class="flex items-center justify-start space-x-4 mt-5">
+                                 <i class="la la-facebook cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                                 <i class="la la-linkedin cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                                 <i class="la la-instagram cursor-pointer h-5 text-gray-600 
+                                 flex items-center justify-end text-2xl font-normal">
+                                 </i>
+                             
+                             </div>
+                         </div>
+                     </div>
+
+                </section>
+            </div>
+        </section>
+
+        <!-- Section Three -->
+        <section class="h-auto w-full flex items-center justify-center py-20 my-20 md:my-36">
+            <!-- inner -->
+            <div class="h-full w-11/12 w-full md:w-10/12 flex flex-col items-start justify-start space-y-20">
+                <div class="h-auto w-full flex flex-col items-start justify-start space-y-5">
+                    <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="50"
+                    class="w-full md:w-4/12 font-medium text-3xl text-left leading-10">Press Releases</h2>
+                    <a
+                    href="./blog.html" 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="w-full md:w-5/12 text-md text-[#336699] text-left flex items-center justify-start">
+                    See all press releases <i class="la la-arrow-right text-lg text-[#336699]"></i>
+                    </a>
+                </div>
+
+                <section class="h-auto w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="150"
+                    class="h-auto w-full flex flex-col items-start justify-center p-2 space-y-3 ">
+                        <small class="text-sm text-gray-800 my-2">June 12th, 2022</small>
+                        <h3 class="w-11/12 md:w-7/12 font-medium text-xl text-black">Debonair is re-inventing the educational sector</h3>
+                        <p class="w-11/12 md:w-10/12 text-gray-600 text-md leading-7">
+                            Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                     <!-- Block -->
+                     <div 
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-delay="150"
+                     class="h-auto w-full flex flex-col items-start justify-center p-2 space-y-3 ">
+                         <small class="text-sm text-gray-800 my-2">June 12th, 2022</small>
+                         <h3 class="w-11/12 md:w-7/12 font-medium text-xl text-black">Debonair is re-inventing the educational sector</h3>
+                         <p class="w-11/12 md:w-10/12 text-gray-600 text-md leading-7">
+                             Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                             tempor incididunt ut labore et dolore magna aliqua. 
+                         </p>
+                     </div>
+                      <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="150"
+                    class="h-auto w-full flex flex-col items-start justify-center p-2 space-y-3 ">
+                        <small class="text-sm text-gray-800 my-2">June 12th, 2022</small>
+                        <h3 class="w-11/12 md:w-7/12 font-medium text-xl text-black">Debonair is re-inventing the educational sector</h3>
+                        <p class="w-11/12 md:w-10/12 text-gray-600 text-md leading-7">
+                            Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                     <!-- Block -->
+                     <div 
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-delay="150"
+                     class="h-auto w-full flex flex-col items-start justify-center p-2 space-y-3 ">
+                         <small class="text-sm text-gray-800 my-2">June 12th, 2022</small>
+                         <h3 class="w-11/12 md:w-7/12 font-medium text-xl text-black">Debonair is re-inventing the educational sector</h3>
+                         <p class="w-11/12 md:w-10/12 text-gray-600 text-md leading-7">
+                             Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                             tempor incididunt ut labore et dolore magna aliqua. 
+                         </p>
+                     </div>
+                      <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="150"
+                    class="h-auto w-full flex flex-col items-start justify-center p-2 space-y-3 ">
+                        <small class="text-sm text-gray-800 my-2">June 12th, 2022</small>
+                        <h3 class="w-11/12 md:w-7/12 font-medium text-xl text-black">Debonair is re-inventing the educational sector</h3>
+                        <p class="w-11/12 md:w-10/12 text-gray-600 text-md leading-7">
+                            Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                            tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                     <!-- Block -->
+                     <div 
+                     data-aos="fade-up"
+                     data-aos-duration="1000"
+                     data-aos-delay="150"
+                     class="h-auto w-full flex flex-col items-start justify-center p-2 space-y-3 ">
+                         <small class="text-sm text-gray-800 my-2">June 12th, 2022</small>
+                         <h3 class="w-11/12 md:w-7/12 font-medium text-xl text-black">Debonair is re-inventing the educational sector</h3>
+                         <p class="w-11/12 md:w-10/12 text-gray-600 text-md leading-7">
+                             Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                             tempor incididunt ut labore et dolore magna aliqua. 
+                         </p>
+                     </div>
+                     
+                </section>
+            </div>
+        </section>
+
+        <!-- Clientele -->
+        <section class="h-auto md:h-52 w-full my-10 flex flex-col items-center justify-center space-y-7 my-32">
+            <h2 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            class="text-lg text-black text-center font-medium">Trusted by 9,000+ businesses and millions of happy customers</h2>
+            <div class="h-auto w-10/12 mx-auto grid grid-cols-1 md:grid-cols-5 gap-5">
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+            </div>
+            <div class="h-auto w-10/12 mx-auto grid grid-cols-1 md:grid-cols-5 gap-5">
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                class="h-12 w-full bg-gray-100 rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- footer -->
+    <footer id="footer" class="h-auto w-full flex items-center justify-center mt-0 mb-5">
+        <!-- Wrapper -->
+        <div class="h-full w-11/12 md:w-10/12 rounded-md flex flex-col items-center justify-center space-y-5 bg-[#f9f9f9]
+        overflow-hidden py-10">
+            <!-- Inner -->
+            <div class="w-full mx-auto flex flex-col items-center justify-center">
+                <a 
+                href="../index.html"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100">
+                    <img alt="" src="../assets/img/logo.png" style="max-width: 75px;" />
+                </a>
+               <p 
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="150"
+               class="w-11/12 md:w-5/12 text-[#336699]/70 text-center font-normal my-3 text-md">
+                   Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="my-8 flex flex-col md:flex-row items-center justify-center space-x-0 space-y-4 md:space-y-0">
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Terms of Service
+                    </a>
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Privacy Policy
+                    </a>
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Support Service
+                    </a>
+                    <a class="h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal md:pr-8" href="#" target="_blank" rel="">
+                        Site Map
+                    </a>
+                </div>
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="250"
+                class="my-8 flex items-center justify-center space-x-5">
+                    <i class="la la-facebook cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                    <i class="la la-linkedin cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                    <i class="la la-instagram cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                   
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div 
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            class="w-9/12 md:w-full text-sm text-[#336699]/70 text-center">&copy;Copyright 2022 Debonair Training | All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+ 
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/drawer.js"></script>
+    <script src="../assets/js/aos.js"></script>
+</body>
+</html>

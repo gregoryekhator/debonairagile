@@ -1,0 +1,60 @@
+/* Header */
+.header {
+    background: rgba(255,255,255, 0.90);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+
+/* Menu */
+.desktopMenu li > div.link-dropdown {
+    visibility: collapse;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+.desktopMenu li > div.link-dropdown::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    border-width: 10px;
+    border-style: solid;
+    transform: translateX(-50%);
+    border-color: transparent transparent #336699 transparent;
+}
+
+.desktopMenu li:hover > div.link-dropdown {
+    visibility: visible;
+    height: 170px;
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* No Scroll */
+.noscroll {
+    overflow: hidden;
+}
+/* Drawer */
+#drawer {
+    z-index: 1000;
+}
+.drawerActive {
+    transform: translateY(0%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 100000;
+}
+
+/* Utility */
+.img-fluid {
+    height: 100%;
+    width: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}

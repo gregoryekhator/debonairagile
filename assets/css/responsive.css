@@ -1,0 +1,23 @@
+.hideOnMobile {
+    display: flex;
+}
+.hideOnDesktop {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .hideOnDesktop {
+        display: flex;
+    }
+}
+@media (min-width: 768px) {
+    .hideOnMobile {
+        display: flex;
+    }
+    .hideOnDesktop {
+        display: none;
+    }
+}

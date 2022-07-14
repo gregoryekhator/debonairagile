@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debonair Group | Press Releases </title>
+
+    <!-- Favicon -->
+
+    <!-- Open Graph -->
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../dist/all.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/swiper.css" />
+
+    <!-- Custom Fonts -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- header -->
+    <header class="h-20 w-full flex items-center justify-center position relative header">
+        <!-- Header Inner -->
+        <section class="h-full w-11/12 md:w-10/12 flex flex-col items-center justify-center space-y-5">
+            <!-- Header Nav -->
+            <nav class="h-auto w-full flex items-center justify-between">
+                <!-- Logo -->
+                <div class="h-auto w-auto flex items-center justify-start space-x-10">
+                    <a href="../index.html" class="font-medium text-lg">
+                        <img alt="" src="../assets/img/logo.png" style="max-width: 75px;" />
+                    </a>
+                    <!-- Menu -->
+                    <ul class="h-full w-full flex items-center justify-end space-x-3 hideOnMobile desktopMenu">
+                        <li class="position relative">
+                            <a 
+                            href="../index.html" 
+                            target="_self" 
+                            rel="noreferrer" 
+                            class="font-medium text-md text-[#336699]
+                            border-b-2 border-[#336699] pb-1">Home</a>
+                        </li>
+                        <li class="position relative">
+                            <a href="./about.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">About</a>
+                        </li>
+                        <li class="position relative">
+                            <a href="./solutions.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Solutions</a>
+                            <!-- Dropdown -->
+                            <div class="h-0 w-60 bg-white shadow-lg position absolute top-full mt-1 transform -translate-x-[35%]
+                            flex flex-col items-start justify-start space-y-3 border-t-2 border-[#336699] py-2 link-dropdown">
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                    Online Training School
+                                </a>
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                    Consultation
+                                </a>
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                   Learning Management System
+                                </a>
+                            </div>
+                        </li>
+                        <li class="position relative">
+                            <a href="./resources.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Resources</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Menu -->
+                <ul class="h-full w-full flex items-center justify-end space-x-5 hideOnMobile">
+                    <li>
+                        <a href="" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Support</a>
+                    </li>
+                    <li>
+                        <button class="h-10 bg-[#336699] text-white rounded-md px-5">Make Inquiry</button>
+                    </li>
+                </ul>
+
+                <!-- Drawer -->
+                <div id="hamburger" class="h-10 w-8 flex flex-col items-start justify-center space-y-1 hideOnDesktop">
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                </div>
+
+                <!-- Mobile Menu -->
+                <ul 
+                id="drawer"
+                class="h-full w-full bg-white rounded-md flex flex-col items-center justify-center space-y-5 
+                position fixed top-0 right-0 z-100 shadow-lg transform -translate-y-[300%] transition duration-700 hideOnDesktop" 
+                >
+                    <!-- Close -->
+                    <div class="h-10 w-10 position absolute top-3 right-2 font-medium" id="closeDrawer">
+                        <i class="la la-times-circle text-2xl"></i>
+                    </div>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a 
+                        href="../index.html" 
+                        target="_self" 
+                        rel="noreferrer" 
+                        class="font-normal text-lg text-gray-800 pb-1">Home</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./about.html" target="_self" rel="noreferrer" class="font-normal text-lg text-gray-800">About</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./solutions.html" target="_self" rel="noreferrer" class="font-normal text-lg text-gray-800">Solutions</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./resources.html" target="_self" rel="noreferrer" class="font-normal text-lg text-gray-800">Resources</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./contact.html" class="h-10 bg-[#336699] text-white text-lg rounded-md px-10 flex items-center justify-center">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+       </section>
+    </header>
+
+    <!-- content -->
+    <main class="h-auto w-full overflow-hidden">
+        <!-- Hero -->
+        <section id="sectionOne" class="h-auto md:h-auto w-full flex items-center justify-center mt-10">
+            <!-- Inner -->
+            <div 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            class="h-full w-11/12 md:w-10/12 bg-red-500 flex flex-col md:flex-row items-center justify-center rounded-md overflow-hidden">
+               <img src="../assets/img/banners/blog-banner.png" alt=="Blog Featured Image" />
+            </div>
+        </section>
+
+        <!-- Blog Gallery -->
+        <section id="sectionOne" class="h-auto w-full flex flex-col items-center justify-center my-20 md:my-32">
+            <!-- Inner -->
+            <div class="h-auto w-10/12 grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="150"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="250"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="350"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="450"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="550"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+                <!-- Article -->
+                <article 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="650"
+                class="h-auto w-full flex flex-col items-start justify-start space-y-4">
+                    <small class="text-xs text-gray-400">June 12th, 2022</small>
+                    <h2 class="text-2xl md:text-3xl w-full text-gray-800 leading-tight">Debonair is re-inventing the educational sector</h2>
+                    <p class="text-sm md:text-md text-gray-500 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    </p>
+                </article>
+            </div>
+
+            <!-- Load more -->
+            <button 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+            class="bg-black py-3 px-8 text-white flex items-center justify-center my-20 font-medium">Load more</button>
+        </section>
+    </main>
+    
+    <!-- footer -->
+    <footer id="footer" class="h-auto w-full flex items-center justify-center mt-0 mb-5">
+        <!-- Wrapper -->
+        <div class="h-full w-11/12 md:w-10/12 rounded-md flex flex-col items-center justify-center space-y-5 bg-[#f9f9f9]
+        overflow-hidden py-10">
+            <!-- Inner -->
+            <div class="w-full mx-auto flex flex-col items-center justify-center">
+                <a 
+                href="../index.html"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100">
+                    <img alt="" src="../assets/img/logo.png" style="max-width: 75px;" />
+                </a>
+               <p 
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="150"
+               class="w-11/12 md:w-5/12 text-[#336699]/70 text-center font-normal my-3 text-md">
+                   Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="my-8 flex flex-col md:flex-row items-center justify-center space-x-0 space-y-4 md:space-y-0">
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_self" rel="">
+                        Terms of Service
+                    </a>
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Privacy Policy
+                    </a>
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Support Service
+                    </a>
+                    <a class="h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal md:pr-8" href="#" target="_blank" rel="">
+                        Site Map
+                    </a>
+                </div>
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="250"
+                class="my-8 flex items-center justify-center space-x-5">
+                    <i class="la la-facebook cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                    <i class="la la-linkedin cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                    <i class="la la-instagram cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                   
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div 
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            class="w-9/12 md:w-full text-sm text-[#336699]/70 text-center">&copy;Copyright 2022 Debonair Training | All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+ 
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/drawer.js"></script>
+    <script src="../assets/js/aos.js"></script>
+</body>
+</html>

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debonair Group | Training School </title>
+
+    <!-- Favicon -->
+
+    <!-- Open Graph -->
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../dist/all.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/swiper.css" />
+
+    <!-- Custom Fonts -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- header -->
+    <header class="h-20 w-full flex items-center justify-center position relative header">
+        <!-- Header Inner -->
+       <section class="h-full w-11/12 md:w-10/12 flex flex-col items-center justify-center space-y-5">
+            <!-- Header Nav -->
+            <nav class="h-auto w-full flex items-center justify-between">
+                <!-- Logo -->
+                <div class="h-auto w-auto flex items-center justify-start space-x-10">
+                    <a href="../index.html" class="font-medium text-lg">
+                        <img alt="" src="../assets/img/logo.png" style="max-width: 75px;" />
+                    </a>
+                     <!-- Menu -->
+                    <ul class="h-full w-full flex items-center justify-end space-x-3 hideOnMobile desktopMenu">
+                        <li class="position relative">
+                            <a 
+                            href="../index.html" 
+                            target="_self" 
+                            rel="noreferrer" 
+                            class="font-normal text-md text-gray-800">Home</a>
+                        </li>
+                        <li class="position relative">
+                            <a href="./about.html" target="_self" rel="noreferrer" 
+                            class="font-normal text-md text-gray-800">About</a>
+                        </li>
+                        <li class="position relative">
+                            <a href="./solutions.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Solutions</a>
+                            <!-- Dropdown -->
+                            <div class="h-0 w-60 bg-white shadow-lg position absolute top-full mt-1 transform -translate-x-[35%]
+                            flex flex-col items-start justify-start space-y-3 border-t-2 border-[#336699] py-2 link-dropdown">
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                    Online Training School
+                                </a>
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                    Consultation
+                                </a>
+                                <a href="./consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                   Learning Management System
+                                </a>
+                            </div>
+                        </li>
+                        <li class="position relative">
+                            <a href="./resources.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Resources</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Menu -->
+                <ul class="h-full w-full flex items-center justify-end space-x-5 hideOnMobile">
+                    <li>
+                        <a href="./contact.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Support</a>
+                    </li>
+                    <li>
+                        <button class="h-10 bg-[#336699] text-white rounded-md px-5">Make Inquiry</button>
+                    </li>
+                </ul>
+
+                <!-- Drawer -->
+                <div id="hamburger" class="h-10 w-8 flex flex-col items-start justify-center space-y-1 hideOnDesktop">
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                </div>
+
+                <!-- Mobile Menu -->
+                <ul 
+                id="drawer"
+                class="h-full w-full bg-white rounded-md flex flex-col items-center justify-center space-y-5 
+                position fixed top-0 right-0 z-100 shadow-lg transform -translate-y-[300%] transition duration-700 hideOnDesktop" 
+                >
+                    <!-- Close -->
+                    <div class="h-10 w-10 position absolute top-3 right-2 font-medium" id="closeDrawer">
+                        <i class="la la-times-circle text-2xl"></i>
+                    </div>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a 
+                        href="../index.html" 
+                        target="_self" 
+                        rel="noreferrer" 
+                        class="font-normal text-lg text-gray-800 pb-1">Home</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./about.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-[#336699]
+                        border-b-4 border-[#336699]">About</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./solutions.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-gray-800">Solutions</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./resources.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-gray-800">Resources</a>
+                    </li>
+                    <li class="h-auto w-full flex items-center justify-center">
+                        <a href="./contact.html" class="h-10 bg-[#336699] text-white text-lg rounded-md px-10
+                        flex items-center justify-center">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+       </section>
+    </header>
+
+    <!-- content -->
+    <main class="h-auto w-full overflow-hidden">
+        <!-- Hero -->
+        <section id="sectionOne" class="h-auto md:h-[40rem] w-full flex items-center justify-center mt-10">
+            <!-- Inner -->
+            <div class="h-full w-11/12 md:w-10/12 flex flex-col md:flex-row items-center justify-center">
+                <!-- Left -->
+                <div class="h-full w-full md:w-[60%] flex flex-col items-start justify-center">
+                    <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="w-full md:w-10/12 text-3xl md:text-7xl font-bold leading-snug md:leading-1 text-black">
+                    Grow Your Skills And Find The Perfect Path
+                    </h2>
+                    <p 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    class="w-full md:w-7/12 my-8 text-lg font-normal text-gray-500 leading-normal">
+                    Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.                     </p>
+                    <div class="w-full flex flex-col md:flex-row items-center justify-center md:justify-start 
+                    md:space-x-5 space-y-3 md:space-y-0">
+                        <a 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                        href="" target="" rel="" 
+                        class="h-12 w-full md:w-56 bg-[#336699] text-lg text-white rounded-md px-2 hover:bg-white hover:text-[#336699]
+                        flex items-center justify-center font-medium transition duration-700 hover:shadow-none hover:border border-[#336699]">
+                            Get Started
+                        </a>
+                        <a 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"s
+                        href="" target="" rel="" class="h-12 w-full md:w-56 bg-transparent border border-[#336699] 
+                        text-lg text-[#336699] rounded-md px-8 transition duration-700 hover:bg-[#336699] hover:text-white
+                        flex items-center justify-center font-medium transition duration-700 hover:shadow-none">
+                            Browse Courses
+                        </a>
+                    </div>
+                    <div class="h-auto w-full flex flex-col items-start justify-start mt-10 space-y-3">
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        class="w-full flex flex-col md:flex-row items-center justify-center md:justify-start space-y-3 md:space-y-0 md:space-x-3">
+                            <div class="bg-white h-12 w-auto rounded-md flex items-center justify-start space-x-2">
+                                <i class="la la-star text-white text-2xl bg-black h-12 w-12 rounded-md p-3
+                                flex items-center justify-center"></i>
+                                <span class="w-6/12 font-normal text-sm text-gray-700">
+                                    Over 500 thousand students are already learning from all oer the world
+                                </span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <!-- Right -->
+                <div class="h-[35rem] md:h-96 md:h-full w-full md:w-[40%] flex flex-row items-center justify-end">
+                   <img 
+                   data-aos="zoom-out"
+                   data-aos-duration="1000" 
+                   data-aos-delay="500"
+                   src="../assets/img/training-school-mockup.png" alt="Mockup" style="height: auto; position: absolute;" class="w-[300px] md:w-[500px] md:right-[100px]" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Section One -->
+        <section class="h-auto w-full flex items-center justify-center my-20 md:my-32">
+            <!-- inner -->
+            <div class="h-full w-11/12 md:w-10/12 flex flex-col md:flex-row items-center justify-center space-y-20">
+                <!-- Left -->
+                <div class="h-full w-full md:w-[40%] flex flex-col items-start justify-start space-y-8">
+                    <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="w-full md:w-9/12 text-4xl md:text-5xl font-medium leading-relaxed">Interesting Features</h2>
+                    <p 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="150"
+                    class="w-10/12 text-lg md:text-xl text-gray-800 leading-loose">
+                    Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor.  
+                    </p>
+                </div>
+                <!-- Right -->
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="h-full w-full md:w-[60%] grid-cols-1 md:grid grid-cols-2 gap-0 bg-[#EFFAFD] p-5 md:p-10 rounded-lg">
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="flex flex-col items-start justify-start space-y-4 mb-10 md:mb-0 md:border-r md:border-gray-200 md:pr-8 py-10">
+                        <i class="h-12 w-12 la la-book text-2xl text-white 
+                        flex items-center justify-center p-2 bg-[#336699] rounded-full"></i>
+                        <h2 class="text-xl font-medium">20k+ course</h2>
+                        <p class="w-full md:w-11/12 text-sm text-gray-700 leading-loose">
+                            Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    class="flex flex-col items-start justify-start space-y-4 mb-10 md:mb-0 md:pl-8 py-10">
+                        <i class="h-12 w-12 la la-book text-2xl text-white 
+                        flex items-center justify-center p-2 bg-[#336699] rounded-full"></i>
+                        <h2 class="text-xl font-medium">20k+ course</h2>
+                        <p class="w-full md:w-11/12 text-sm text-gray-700 leading-loose">
+                            Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                    class="flex flex-col items-start justify-start space-y-4 mb-10 md:mb-0 md:border-r md:border-gray-200 md:pr-8 py-10">
+                        <i class="h-12 w-12 la la-book text-2xl text-white 
+                        flex items-center justify-center p-2 bg-[#336699] rounded-full"></i>
+                        <h2 class="text-xl font-medium">20k+ course</h2>
+                        <p class="w-full md:w-11/12 text-sm text-gray-700 leading-loose">
+                            Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                    <!-- Block -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="400"
+                    class="flex flex-col items-start justify-start space-y-4 mb-10 md:mb-0 md:pl-8 py-10">
+                        <i class="h-12 w-12 la la-book text-2xl text-white 
+                        flex items-center justify-center p-2 bg-[#336699] rounded-full"></i>
+                        <h2 class="text-xl font-medium">20k+ course</h2>
+                        <p class="w-full md:w-11/12 text-sm text-gray-700 leading-loose">
+                            Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Two -->
+        <section class="h-auto w-full flex flex-col items-center justify-center my-20 md:my-32">
+            <!-- inner -->
+            <div class="h-auto w-10/12 flex flex-col items-center justify-center space-y-16">
+                <h2 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="w-full md:w-4/12 text-4xl md:text-5xl text-center font-medium leading-snug m-0">Find the best courses for you</h2>
+
+                <div 
+                data-aos="fade-udiv"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="w-full flex grid grid-cols-2 gap-5 md:flex md:flex-row md:items-center md:justify-center md:space-x-5">
+                    <span class="text-[#336699] text-md font-normal">UI/UX Design</span>
+                    <span class="text-gray-400 text-md font-normal">Development</span>
+                    <span class="text-gray-400 text-md font-normal">Marketing</span>
+                    <span class="text-gray-400 text-md font-normal">Business</span>
+                    <span class="text-gray-400 text-md font-normal">Technology</span>
+                    <span class="text-gray-400 text-md font-normal">All Category</span>
+                </div>
+
+                <!-- Slider main container -->
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="swiper h-[300px] md:h-full w-full flex items-center justify-center no-padding">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper h-full w-full mx-auto">
+                        <!-- Slides -->
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-72 w-full md:w-full bg-white shadow-lg rounded-md py-5 px-3 
+                            flex flex-col items-start justify-start space-y-5">
+                                <div class="h-36 w-full bg-gray-200 rounded-md flex items-center justify-center">
+                                    <img src="../assets/img/training-school-courses-cover.png" alt="" />
+                                </div>
+                                <small class="text-sm text-[#336699]">Markerting</small>
+                                <div class="flex items-center justify-betwen">
+                                    <div class="h-full w-1/2 flex items-center justify-start">
+                                        <h3 class="w-full text-sm text-gray-800 font-bold">Know more about design thinking</h3>
+                                    </div>
+                                    <div class="h-full w-1/2 flex items-center justify-end">
+                                        <button class="h-10 w-20 rounded-full bg-[#336699] text-white flex items-center justify-center">Join</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="250"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-72 w-full md:w-full bg-white shadow-lg rounded-md py-5 px-3 
+                            flex flex-col items-start justify-start space-y-5">
+                                <div class="h-36 w-full bg-gray-200 rounded-md flex items-center justify-center">
+                                    <img src="../assets/img/training-school-courses-cover.png" alt="" />
+                                </div>
+                                <small class="text-sm text-[#336699]">Markerting</small>
+                                <div class="flex items-center justify-betwen">
+                                    <div class="h-full w-1/2 flex items-center justify-start">
+                                        <h3 class="w-full text-sm text-gray-800 font-bold">Know more about design thinking</h3>
+                                    </div>
+                                    <div class="h-full w-1/2 flex items-center justify-end">
+                                        <button class="h-10 w-20 rounded-full bg-[#336699] text-white flex items-center justify-center">Join</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-72 w-full md:w-full bg-white shadow-lg rounded-md py-5 px-3 
+                            flex flex-col items-start justify-start space-y-5">
+                                <div class="h-36 w-full bg-gray-200 rounded-md flex items-center justify-center">
+                                    <img src="../assets/img/training-school-courses-cover.png" alt="" />
+                                </div>
+                                <small class="text-sm text-[#336699]">Markerting</small>
+                                <div class="flex items-center justify-betwen">
+                                    <div class="h-full w-1/2 flex items-center justify-start">
+                                        <h3 class="w-full text-sm text-gray-800 font-bold">Know more about design thinking</h3>
+                                    </div>
+                                    <div class="h-full w-1/2 flex items-center justify-end">
+                                        <button class="h-10 w-20 rounded-full bg-[#336699] text-white flex items-center justify-center">Join</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="350"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-72 w-full md:w-full bg-white shadow-lg rounded-md py-5 px-3 
+                            flex flex-col items-start justify-start space-y-5">
+                                <div class="h-36 w-full bg-gray-200 rounded-md flex items-center justify-center">
+                                    <img src="../assets/img/training-school-courses-cover.png" alt="" />
+                                </div>
+                                <small class="text-sm text-[#336699]">Markerting</small>
+                                <div class="flex items-center justify-betwen">
+                                    <div class="h-full w-1/2 flex items-center justify-start">
+                                        <h3 class="w-full text-sm text-gray-800 font-bold">Know more about design thinking</h3>
+                                    </div>
+                                    <div class="h-full w-1/2 flex items-center justify-end">
+                                        <button class="h-10 w-20 rounded-full bg-[#336699] text-white flex items-center justify-center">Join</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-72 w-full md:w-full bg-white shadow-lg rounded-md py-5 px-3 
+                            flex flex-col items-start justify-start space-y-5">
+                                <div class="h-36 w-full bg-gray-200 rounded-md flex items-center justify-center">
+                                    <img src="../assets/img/training-school-courses-cover.png" alt="" />
+                                </div>
+                                <small class="text-sm text-[#336699]">Markerting</small>
+                                <div class="flex items-center justify-betwen">
+                                    <div class="h-full w-1/2 flex items-center justify-start">
+                                        <h3 class="w-full text-sm text-gray-800 font-bold">Know more about design thinking</h3>
+                                    </div>
+                                    <div class="h-full w-1/2 flex items-center justify-end">
+                                        <button class="h-10 w-20 rounded-full bg-[#336699] text-white flex items-center justify-center">Join</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="450"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-72 w-full md:w-full bg-white shadow-lg rounded-md py-5 px-3 
+                            flex flex-col items-start justify-start space-y-5">
+                                <div class="h-36 w-full bg-gray-200 rounded-md flex items-center justify-center">
+                                    <img src="../assets/img/training-school-courses-cover.png" alt="" />
+                                </div>
+                                <small class="text-sm text-[#336699]">Markerting</small>
+                                <div class="flex items-center justify-betwen">
+                                    <div class="h-full w-1/2 flex items-center justify-start">
+                                        <h3 class="w-full text-sm text-gray-800 font-bold">Know more about design thinking</h3>
+                                    </div>
+                                    <div class="h-full w-1/2 flex items-center justify-end">
+                                        <button class="h-10 w-20 rounded-full bg-[#336699] text-white flex items-center justify-center">Join</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="500"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-72 w-full md:w-full bg-white shadow-lg rounded-md py-5 px-3 
+                            flex flex-col items-start justify-start space-y-5">
+                                <div class="h-36 w-full bg-gray-200 rounded-md flex items-center justify-center">
+                                    <img src="../assets/img/training-school-courses-cover.png" alt="" />
+                                </div>
+                                <small class="text-sm text-[#336699]">Markerting</small>
+                                <div class="flex items-center justify-betwen">
+                                    <div class="h-full w-1/2 flex items-center justify-start">
+                                        <h3 class="w-full text-sm text-gray-800 font-bold">Know more about design thinking</h3>
+                                    </div>
+                                    <div class="h-full w-1/2 flex items-center justify-end">
+                                        <button class="h-10 w-20 rounded-full bg-[#336699] text-white flex items-center justify-center">Join</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Three -->
+        <section class="h-auto w-full flex items-center justify-center my-20 md:my-32">
+            <!-- Wrapper -->
+            <div class="h-full w-11/12 md:w-10/12 flex flex-col items-start justify-start space-y-20">
+                <!-- Header -->
+                <header class="flex flex-col md:flex-row items-center justify-center space-y-5 md:space-y-0">
+                    <div class="h-full w-full md:w-1/2 flex items-center justify-start">
+                        <h2 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="100"
+                        class="text-4xl md:text-5xl w-full md:w-9/12 text-black leading-normal">High quality video, audio, & live class</h2>
+                    </div>
+                    <div class="h-full w-full md:w-1/2 flex items-center justify-start">
+                        <p 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                        class="h-full w-full md:w-10/12 text-md md:text-xl leading-loose text-gray-400">
+                            Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                </header>
+                <!-- inner -->
+                <div class="h-full w-full flex flex-col md:flex-row items-center justify-center space-y-20">
+                    <!-- Left -->
+                    <div class="h-full w-full md:w-1/2 flex flex-col items-start justify-start space-y-8">
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="100"
+                        class="h-auto md:h-72 w-10/12 bg-white rounded-md my-5 flex items-center justify-center">
+                            <img src="../assets/img/training-school-section-three-mockup.png" alt="" />
+                        </div>
+                        <h2 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="150"
+                        class="w-full md:w-9/12 text-4xl md:text-3xl font-medium leading-snug">Introduction to our mentor</h2>
+                        <p 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                        class="w-full md:w-8/12 text-md md:text-xl text-gray-800 leading-loose">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <!-- Right -->
+                    <div 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="h-full w-full md:w-1/2 grid-cols-1 md:grid grid-cols-2 gap-10 bg-white rounded-lg">
+                        <!-- Block -->
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="100"
+                        class="bg-white shadow-2xl p-5 rounded-md flex flex-col items-start justify-start space-y-4 mb-10 md:mb-0">
+                            <i class="h-16 w-16 la la-book text-2xl text-white 
+                            flex items-center justify-center p-2 bg-[#336699] rounded-md"></i>
+                            <h2 class="text-xl font-medium">Record class</h2>
+                            <p class="w-10/12 md:w-11/12 text-sm text-gray-700 leading-loose">
+                                Lorem ipsum dolor sit amet,  adipiscing elit, sed.
+                            </p>
+                        </div>
+                        <!-- Block -->
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                        class="bg-white shadow-2xl p-5 rounded-md flex flex-col items-start justify-start space-y-4 mb-10 md:mb-0">
+                            <i class="h-16 w-16 la la-book text-2xl text-white 
+                            flex items-center justify-center p-2 bg-[#336699] rounded-md"></i>
+                            <h2 class="text-xl font-medium">High-quality video</h2>
+                            <p class="w-10/12 md:w-11/12 text-sm text-gray-700 leading-loose">
+                                Lorem ipsum dolor sit amet,  adipiscing elit, sed.
+                            </p>
+                        </div>
+                        <!-- Block -->
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                        class="bg-white shadow-2xl p-5 rounded-md flex flex-col items-start justify-start space-y-4 mb-10 md:mb-0">
+                            <i class="h-16 w-16 la la-book text-2xl text-white 
+                            flex items-center justify-center p-2 bg-[#336699] rounded-md"></i>
+                            <h2 class="text-xl font-medium">Live Classes</h2>
+                            <p class="w-10/12 md:w-11/12 text-sm text-gray-700 leading-loose">
+                                Lorem ipsum dolor sit amet,  adipiscing elit, sed.
+                            </p>
+                        </div>
+                        <!-- Block -->
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        class="bg-white shadow-2xl p-5 rounded-md flex flex-col items-start justify-start space-y-4 mb-10 md:mb-0">
+                            <i class="h-16 w-16 la la-book text-2xl text-white 
+                            flex items-center justify-center p-2 bg-[#336699] rounded-md"></i>
+                            <h2 class="text-xl font-medium">All Devices</h2>
+                            <p class="w-10/12 md:w-11/12 text-sm text-gray-700 leading-loose">
+                                Lorem ipsum dolor sit amet,  adipiscing elit, sed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Four -->
+        <section class="h-auto w-full flex flex-col items-center justify-center my-20 md:my-32">
+            <!-- inner -->
+            <div class="h-auto w-10/12 flex flex-col items-center justify-center space-y-8">
+                <h2 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="w-full md:w-7/12 text-3xl md:text-4xl md:text-5xl text-center font-medium leading-snug m-0">
+                What students say about training school
+                </h2>
+
+                <!-- Slider main container -->
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                class="swiper h-full w-full flex items-center justify-center no-padding" >
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper h-full w-full mx-auto">
+                        <!-- Slides -->
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-60 w-full md:w-full bg-white shadow-lg rounded-md 
+                            p-5 flex flex-col items-start justify-start">
+                                <i class="h-12 w-12 bg-gray-100 rounded-full la la-user text-2xl flex items-center justify-center"></i>
+                                <h2 class="text-lg text-black mt-3">Gemma Styles</h2>
+                                <small class="text-sm text-gray-400 mb-3">College Student</small>
+                                <p class="w-9/12 text-sm leading-loose text-gray-800">Lorem ipsum dolor sit amet,  adipiscing elit, sed  ipsum</p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="250"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-60 w-full md:w-full bg-white shadow-lg rounded-md 
+                            p-5 flex flex-col items-start justify-start">
+                                <i class="h-12 w-12 bg-gray-100 rounded-full la la-user text-2xl flex items-center justify-center"></i>
+                                <h2 class="text-lg text-black mt-3">Gemma Styles</h2>
+                                <small class="text-sm text-gray-400 mb-3">College Student</small>
+                                <p class="w-9/12 text-sm leading-loose text-gray-800">Lorem ipsum dolor sit amet,  adipiscing elit, sed  ipsum</p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-60 w-full md:w-full bg-white shadow-lg rounded-md 
+                            p-5 flex flex-col items-start justify-start">
+                                <i class="h-12 w-12 bg-gray-100 rounded-full la la-user text-2xl flex items-center justify-center"></i>
+                                <h2 class="text-lg text-black mt-3">Gemma Styles</h2>
+                                <small class="text-sm text-gray-400 mb-3">College Student</small>
+                                <p class="w-9/12 text-sm leading-loose text-gray-800">Lorem ipsum dolor sit amet,  adipiscing elit, sed  ipsum</p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="350"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-60 w-full md:w-full bg-white shadow-lg rounded-md 
+                            p-5 flex flex-col items-start justify-start">
+                                <i class="h-12 w-12 bg-gray-100 rounded-full la la-user text-2xl flex items-center justify-center"></i>
+                                <h2 class="text-lg text-black mt-3">Gemma Styles</h2>
+                                <small class="text-sm text-gray-400 mb-3">College Student</small>
+                                <p class="w-9/12 text-sm leading-loose text-gray-800">Lorem ipsum dolor sit amet,  adipiscing elit, sed  ipsum</p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-60 w-full md:w-full bg-white shadow-lg rounded-md 
+                            p-5 flex flex-col items-start justify-start">
+                                <i class="h-12 w-12 bg-gray-100 rounded-full la la-user text-2xl flex items-center justify-center"></i>
+                                <h2 class="text-lg text-black mt-3">Gemma Styles</h2>
+                                <small class="text-sm text-gray-400 mb-3">College Student</small>
+                                <p class="w-9/12 text-sm leading-loose text-gray-800">Lorem ipsum dolor sit amet,  adipiscing elit, sed  ipsum</p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="450"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-60 w-full md:w-full bg-white shadow-lg rounded-md 
+                            p-5 flex flex-col items-start justify-start">
+                                <i class="h-12 w-12 bg-gray-100 rounded-full la la-user text-2xl flex items-center justify-center"></i>
+                                <h2 class="text-lg text-black mt-3">Gemma Styles</h2>
+                                <small class="text-sm text-gray-400 mb-3">College Student</small>
+                                <p class="w-9/12 text-sm leading-loose text-gray-800">Lorem ipsum dolor sit amet,  adipiscing elit, sed  ipsum</p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="500"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-60 w-full md:w-full bg-white shadow-lg rounded-md 
+                            p-5 flex flex-col items-start justify-start">
+                                <i class="h-12 w-12 bg-gray-100 rounded-full la la-user text-2xl flex items-center justify-center"></i>
+                                <h2 class="text-lg text-black mt-3">Gemma Styles</h2>
+                                <small class="text-sm text-gray-400 mb-3">College Student</small>
+                                <p class="w-9/12 text-sm leading-loose text-gray-800">Lorem ipsum dolor sit amet,  adipiscing elit, sed  ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Five -->
+        <section class="h-auto w-full my-10 flex flex-col items-center justify-center space-y-7 my-20 md:my-32">
+            <!-- Inner -->
+            <div class="h-auto md:h-[30rem] w-11/12 md:w-10/12 py-10 md:py-0 flex flex-col items-center justify-center bg-[#336699] 
+            shadow-2xl shadow-[#336699]/50 rounded-md">
+                <h2 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="50"
+                class="w-11/12 md:w-6/12 font-medium text-2xl md:text-5xl text-white text-center">You still can’t find what you are looking for?</h2>
+                <p 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="w-8/12 md:w-5/12 text-sm text-white/70 text-center my-3">Get in touch with our team, so we can serve you better</p>
+                <a 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="150"
+                href="./contact.html" class="bg-white rounded-md text-[#336699] my-5 px-10 py-2 
+                md:px-20 md:py-5 text-lg md:text-2xl font-medium">
+                Contact us
+                </a>
+            </div>
+        </section>
+
+
+    </main>
+    
+    <!-- footer -->
+    <footer id="footer" class="h-auto w-full flex items-center justify-center mt-0 mb-5">
+        <!-- Wrapper -->
+        <div class="h-full w-11/12 md:w-10/12 rounded-md flex flex-col items-center justify-center space-y-5 bg-[#f9f9f9]
+        overflow-hidden py-10">
+            <!-- Inner -->
+            <div class="w-full mx-auto flex flex-col items-center justify-center">
+                <a 
+                href="../index.html"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100">
+                    <img alt="" src="../assets/img/logo.png" style="max-width: 75px;" />
+                </a>
+               <p 
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="150"
+               class="w-11/12 md:w-5/12 text-[#336699]/70 text-center font-normal my-3 text-md">
+                   Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="my-8 flex flex-col md:flex-row items-center justify-center space-x-0 space-y-4 md:space-y-0">
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Terms of Service
+                    </a>
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Privacy Policy
+                    </a>
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Support Service
+                    </a>
+                    <a class="h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal md:pr-8" href="#" target="_blank" rel="">
+                        Site Map
+                    </a>
+                </div>
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="250"
+                class="my-8 flex items-center justify-center space-x-5">
+                    <i class="la la-facebook cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                    <i class="la la-linkedin cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                    <i class="la la-instagram cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                   
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div 
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            class="w-9/12 md:w-full text-sm text-[#336699]/70 text-center">&copy;Copyright 2022 Debonair Training | All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+ 
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/drawer.js"></script>
+    <script src="../assets/js/swiper.js"></script>
+    <script src="../assets/js/aos.js"></script>
+</body>
+</html>

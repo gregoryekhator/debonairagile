@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debonair Group</title>
+
+    <!-- Favicon -->
+
+    <!-- Open Graph -->
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="./dist/all.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/swiper.css" />
+
+    <!-- Custom Fonts -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-[#fff]">
+    <!-- header -->
+    <header class="h-20 w-full flex items-center justify-center position relative header">
+        <!-- Header Inner -->
+       <section class="h-full w-11/12 md:w-10/12 flex flex-col items-center justify-center space-y-5">
+            <!-- Header Nav -->
+            <nav class="h-auto w-full flex items-center justify-between">
+                <!-- Logo -->
+                <div class="h-auto w-auto flex items-center justify-start space-x-10">
+                    <h1 class="font-medium text-lg">
+                        <img alt="" src="./assets/img/logo.png" style="max-width: 75px;" />
+                    </h1>
+                     <!-- Menu -->
+                    <ul class="h-full w-full flex items-center justify-end space-x-3 hideOnMobile desktopMenu">
+                        <li class="position relative">
+                            <a 
+                            href="" 
+                            target="_self" 
+                            rel="noreferrer" 
+                            class="font-medium text-md text-[#336699]
+                            border-b-2 border-[#336699] pb-1">Home</a>
+                        </li>
+                        <li class="position relative">
+                            <a href="./templates/about.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">About</a>
+                        </li>
+                        <li class="position relative">
+                            <a href="./templates/solutions.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Solutions</a>
+                            <!-- Dropdown -->
+                            <div class="h-0 w-60 bg-white shadow-lg position absolute top-full mt-1 transform -translate-x-[35%]
+                            flex flex-col items-start justify-start space-y-3 border-t-2 border-[#336699] py-2 link-dropdown">
+                                <a href="./templates/consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                    Online Training School
+                                </a>
+                                <a href="./templates/consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                    Consultation
+                                </a>
+                                <a href="./templates/consultation.html" class="p-3 w-full text-sm font-medium transition duration-700
+                                hover:bg-gray-100">
+                                   Learning Management System
+                                </a>
+                            </div>
+                        </li>
+                        <li class="position relative">
+                            <a href="./templates/resources.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Resources</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Menu -->
+                <ul class="h-full w-full flex items-center justify-end space-x-5 hideOnMobile">
+                    <li>
+                        <a href="./templates/contact.html" target="_self" rel="noreferrer" class="font-normal text-md text-gray-800">Support</a>
+                    </li>
+                    <li>
+                        <button class="h-10 bg-[#336699] text-white rounded-md px-5">Make Inquiry</button>
+                    </li>
+                </ul>
+
+                <!-- Drawer -->
+                <div id="hamburger" class="h-10 w-8 flex flex-col items-start justify-center space-y-1 hideOnDesktop">
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                    <span class="h-[2px] w-11/12 bg-[#336699] rounded-full"></span>
+                </div>
+
+                <!-- Mobile Menu -->
+                <ul 
+                id="drawer"
+                class="h-full w-full bg-white rounded-md flex flex-col items-center justify-center space-y-5 
+                position fixed top-0 right-0 z-100 shadow-lg transform -translate-y-[300%] transition duration-700 hideOnDesktop" 
+                >
+                    <!-- Close -->
+                    <div class="h-10 w-10 position absolute top-3 right-2 font-medium" id="closeDrawer">
+                        <i class="la la-times-circle text-2xl"></i>
+                    </div>
+                    <li class="position relative">
+                        <a 
+                        href="./index.html" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        class="font-normal text-lg text-[#336699]
+                        border-b-4 border-[#336699] pb-1">Home</a>
+                    </li>
+                    <li class="position relative">
+                        <a href="./templates/about.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-[#336699]">About</a>
+                    </li>
+                    <li class="position relative">
+                        <a href="./templates/solutions.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-[#336699]">Solutions</a>
+                    </li>
+                    <li class="position relative">
+                        <a href="./templates/resources.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-[#336699]">Resources</a>
+                    </li>
+                    <li class="position relative">
+                        <a href="./templates/contact.html" class="h-12 bg-[#336699] text-white text-lg rounded-md px-10">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+       </section>
+    </header>
+
+    <!-- content -->
+    <main class="h-auto w-full overflow-hidden">
+        <!-- Hero -->
+        <section id="sectionOne" class="h-auto md:h-[32rem] w-full flex items-center justify-center mt-10">
+            <!-- Inner -->
+            <div class="h-full w-11/12 md:w-10/12 flex flex-col md:flex-row items-center justify-center">
+                <!-- Left -->
+                <div class="h-full w-full md:w-[60%] flex flex-col items-start justify-center">
+                    <h2 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                    class="w-full md:w-11/12 text-3xl md:text-7xl font-bold leading-tight md:leading-tight text-black">
+                       Unleash Your Online Learning Acumen
+                    </h2>
+                    <p 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    class="w-full md:w-9/12 my-8 text-lg font-normal text-gray-500 leading-normal">
+                        Welcome to the place where success begin, we will take your elearning experience to next level
+                    </p>
+                    <div class="w-full flex flex-col md:flex-row items-center justify-center md:justify-start 
+                    md:space-x-5 space-y-3 md:space-y-0">
+                        <a 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                        href="" target="" rel="" 
+                        class="h-12 w-full md:w-56 bg-[#336699] text-lg text-white rounded-md px-2 hover:bg-white hover:text-[#336699]
+                        flex items-center justify-center font-medium transition duration-700 hover:shadow-none hover:border border-[#336699]">
+                            Book an appointment
+                        </a>
+                        <a 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"s
+                        href="" target="" rel="" class="h-12 w-full md:w-56 bg-transparent border border-[#336699] 
+                        text-lg text-[#336699] rounded-md px-8 transition duration-700 hover:bg-[#336699] hover:text-white
+                        flex items-center justify-center font-medium transition duration-700 hover:shadow-none">
+                            Explore
+                        </a>
+                    </div>
+                </div>
+                <!-- Right -->
+                <div class="h-96 md:h-full w-full md:w-[40%] flex flex-row items-center justify-end">
+                   <img 
+                   data-aos="zoom-out"
+                   data-aos-duration="1000" 
+                   data-aos-delay="500"
+                   src="./assets/img/mockup.png" alt="Mockup" style="height: auto; width: 600px; position: absolute;" class="md:right-[40px]" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Clientele -->
+        <section class="h-auto md:h-52 w-full my-10 flex flex-col items-center justify-center space-y-7">
+            <h2 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            class="text-lg text-black text-center font-medium">Trusted by 9,000+ businesses and millions of happy customers</h2>
+            <div class="h-auto w-10/12 mx-auto grid grid-cols-1 md:grid-cols-5 gap-5">
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                class="h-12 w-full bg-white rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="h-12 w-full bg-white rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                class="h-12 w-full bg-white rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+                class="h-12 w-full bg-white rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+                <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="500"
+                class="h-12 w-full bg-white rounded-md flex items-center justify-center font-medium text-sm">
+                    Kent University
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Two -->
+        <section id="sectionTwo" class="h-auto md:h-52 w-full flex items-center justify-center my-20 md:my-24">
+            <!-- Inner -->
+            <div 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            class="h-full w-11/12 md:w-10/12 rounded-md flex flex-col md:flex-row items-center justify-center 
+            md:space-x-5 bg-[#336699] shadow-2xl shadow-[#336699]/50 overflow-hidden">
+               <div class="h-36 md:h-16 w-52 bg-transparent flex flex-col items-center justify-center space-y-2 md:space-y-5
+               md:border-r md:border-[rgba(255,255,255,0.3)]">
+                   <h3 
+                   id="counter"
+                   data-aos-id="counter"
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="100"
+                   class="font-bold text-white text-4xl" >200+</h3>
+                   <p 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="150"
+                   class="text-lg text-white font-norma">Success Stories</p>
+               </div>
+               <div class="h-36 md:h-16 w-52 bg-transparent flex flex-col items-center justify-center space-y-2 md:space-y-5
+               md:border-r md:border-[rgba(255,255,255,0.3)]">
+                   <h3 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="200"
+                   class="font-bold text-white text-4xl">97%</h3>
+                   <p 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="250"
+                   class="text-lg text-white font-norma">Happy Clients</p>
+               </div>
+               <div class="h-36 md:h-16 w-52 bg-transparent flex flex-col items-center justify-center space-y-2 md:space-y-5
+               md:border-r md:border-[rgba(255,255,255,0.3)]">
+                   <h3 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="300"
+                   class="font-bold text-white text-4xl">60+</h3>
+                   <p 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="350"
+                   class="text-lg text-white font-norma">Awards</p>
+               </div>
+               <div class="h-36 md:h-16 w-52 bg-transparent flex flex-col items-center justify-center space-y-2 md:space-y-5">
+                   <h3 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="400"
+                   class="font-bold text-white text-4xl">300+</h3>
+                   <p 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="450"
+                   class="text-lg text-white font-norma">Work Done</p>
+               </div>
+            </div>
+        </section>
+
+        <!-- Section Three -->
+        <section id="sectionThree" class="h-auto w-full flex flex-col items-center justify-center my-20 md:my-32 position relative">
+            <!-- Inner -->
+            <div class="h-full w-full md:w-11/12 rounded-md py-10 flex flex-col items-center justify-center 
+            bg-transparent overflow-hidden">
+               <h3 
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="50"
+               class="font-medium text-md text-center text-[#336699] mb-5">WHY CHOOSE US</h3>
+               <h2 
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="100"
+               class="w-11/12 md:w-7/12 text-2xl md:text-5xl font-bold leading-tight text-center">Benefits of Online Learning with Debonair Training</h2>
+               <div class="h-auto md:h-56 w-11/12 grid grid-cols-1 md:grid-cols-4 gap-10 mt-20">
+                   <div 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="150"
+                   class="bg-white rounded-lg flex flex-col items-start justify-center p-3">
+                        <div class="h-12 w-12 bg-[#1A4586] rounded-sm shadow-lg flex items-center justify-center">
+                            <i class="text-3xl text-white la la-users"></i>
+                        </div>
+                        <h2 
+                        class="font-bold text-black text-lg mt-5">Training Software</h2>
+                        <p class="text-sm w-11/12 text-slate-600 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt magna aliqua
+                        </p>
+                   </div>
+                   <div 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="200"
+                   class="bg-white rounded-lg flex flex-col items-start justify-center p-3">
+                        <div class="h-12 w-12 bg-[#0166FF] rounded-sm shadow-lg flex items-center justify-center">
+                            <i class="text-3xl text-white la la-chalkboard-teacher"></i>
+                        </div>
+                        <h2 class="font-bold text-black text-lg mt-5">Instructional Design</h2>
+                        <p class="text-sm w-11/12 text-slate-600 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt magna aliqua
+                        </p>
+                   </div>
+                   <div 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="250"
+                   class="bg-white rounded-lg flex flex-col items-start justify-center p-3">
+                        <div class="h-12 w-12 bg-[#E5CA94] rounded-sm shadow-lg flex items-center justify-center">
+                            <i class="text-3xl text-white la la-code"></i>
+                        </div>
+                        <h2 class="font-bold text-black text-lg mt-5">Software Development</h2>
+                        <p class="text-sm w-11/12 text-slate-600 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt magna aliqua
+                        </p>
+                   </div>
+                   <div 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="300"
+                   class="bg-white rounded-lg flex flex-col items-start justify-center p-3">
+                        <div class="h-12 w-12 bg-[#53A8C6] rounded-sm shadow-lg flex items-center justify-center">
+                            <i class="text-3xl text-white la la-school"></i>
+                        </div>
+                        <h2 class="font-bold text-black text-lg mt-5">Online School</h2>
+                        <p class="text-sm w-11/12 text-slate-600 mt-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt magna aliqua
+                        </p>
+                   </div>
+               </div>
+            </div>
+
+            <!-- Decorator -->
+            <div class="h-16 w-32 md:w-72 bg-[#E4E4E4] rounded-full position absolute -top-2 -right-2 
+            transform -rotate-45 translate-x-[40%] md:translate-x-[30%] -translate-y-2 md:translate-y-10"></div>
+            <div class="h-16 w-72 bg-[#E4E4E4] rounded-full position absolute -top-2 md:top-20 -right-2 
+            transform -rotate-45 translate-x-[80%] md:translate-x-[60%]"></div>
+        </section>
+
+        <!-- Section Four -->
+        <section id="sectionFour" class="h-auto md:h-[35rem] w-full flex flex-col items-center justify-center my-20 md:my-0">
+            <!-- Inner -->
+            <div class="h-auto md:h-72 w-full rounded-md md:py-10 flex flex-col md:flex-row items-center justify-center md:space-x-5 
+            space-y-3 md;space-y-0 bg-transparent">
+               <div class="h-full w-1/2 flex items-center justify-center position relative">
+                   <!-- <div class="h-72 w-56 rounded-md bg-blue-600 position absolute"></div>
+                   <div class="h-72 w-56 rounded-md bg-green-600 position absolute right-28 top-10"></div> -->
+                   <img 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="50"
+                   src="./assets/img/home-mockup.png" alt="" 
+                   class="h-auto md:max-w-[500px] max-w-[300px] mx-auto md:transform md:translate-x-[80px]" />
+               </div>
+               <div class="h-full w-11/12 md:w-1/2 flex flex-col items-start justify-center">
+                   <h3 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="100"
+                   class="w-full md:w-auto font-medium text-[#336699] text-center md:text-left">ABOUT US</h3>
+                   <h2 
+                   data-aos="fade-up"
+                   data-aos-duration="1000"
+                   data-aos-delay="150"
+                   class="w-full text-center md:text-left md:w-8/12 text-2xl md:text-4xl font-normal my-2">Online 
+                       <span class="text-black font-bold">Learning</span> Experience 
+                       <span class="text-black font-bold">Developer</span>
+                    </h2>
+                    <p 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                    class="w-full md:w-6/12 text-md text-slate-700 my-4 text-center md:text-left">
+                        Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <a 
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="250"
+                    class="h-12 w-36 p-3 bg-[#336699] rounded-full text-white flex items-center justify-center mx-auto md:mx-0">
+                        Learn more
+                    </a>
+               </div>
+            </div>
+        </section>
+
+        <!-- Section Five -->
+        <section id="sectionFive" class="h-auto w-full flex flex-col items-center justify-center my-20 md:my-28">
+            <h3 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+            class="text-md text-[#336699] font-medium">OUR TESTIMONIAL</h3>
+            <h2 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+            class="w-11/12 md:w-5/12 font-bold text-3xl md:text-5xl text-black my-5 text-center leading-tight">Hear what others have to say about us</h2>
+            <!-- Inner -->
+            <div class="h-full w-full md:w-10/12 rounded-md md:py-10 flex items-center justify-center bg-transparent">
+                <!-- Slider main container -->
+                <div class="swiper h-full w-full flex items-center justify-center">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper h-full w-full mx-auto">
+                        <!-- Slides -->
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="200"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-56 w-full md:w-full bg-white shadow-lg rounded-md p-5 flex flex-col items-start justify-start">
+                                <div class="h-12 w-12 rounded-full bg-transparent overflow-hidden flex items-center justify-center">
+                                    <img src="./assets/img/mockup.png" alt="" />
+                                </div>
+                                <h2 class="font-bold text-lg mt-2">Lauren Standford</h2>
+                                <h3 class="text-sm font-normal text-gray-400 mb-3">Sales Representative</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor aliqua. </p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="250"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-56 w-full md:w-full bg-white shadow-lg rounded-md p-5 flex flex-col items-start justify-start">
+                                <div class="h-12 w-12 rounded-full bg-transparent overflow-hidden flex items-center justify-center">
+                                    <img src="./assets/img/mockup.png" alt="" />
+                                </div>
+                                <h2 class="font-bold text-lg mt-2">Lauren Standford</h2>
+                                <h3 class="text-sm font-normal text-gray-400 mb-3">Sales Representative</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor aliqua. </p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="300"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-56 w-full md:w-full bg-white shadow-lg rounded-md p-5 flex flex-col items-start justify-start">
+                                <div class="h-12 w-12 rounded-full bg-transparent overflow-hidden flex items-center justify-center">
+                                    <img src="./assets/img/mockup.png" alt="" />
+                                </div>
+                                <h2 class="font-bold text-lg mt-2">Lauren Standford</h2>
+                                <h3 class="text-sm font-normal text-gray-400 mb-3">Sales Representative</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor aliqua. </p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="350"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-56 w-full md:w-full bg-white shadow-lg rounded-md p-5 flex flex-col items-start justify-start">
+                                <div class="h-12 w-12 rounded-full bg-transparent overflow-hidden flex items-center justify-center">
+                                    <img src="./assets/img/mockup.png" alt="" />
+                                </div>
+                                <h2 class="font-bold text-lg mt-2">Lauren Standford</h2>
+                                <h3 class="text-sm font-normal text-gray-400 mb-3">Sales Representative</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor aliqua. </p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="400"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-56 w-full md:w-full bg-white shadow-lg rounded-md p-5 flex flex-col items-start justify-start">
+                                <div class="h-12 w-12 rounded-full bg-transparent overflow-hidden flex items-center justify-center">
+                                    <img src="./assets/img/mockup.png" alt="" />
+                                </div>
+                                <h2 class="font-bold text-lg mt-2">Lauren Standford</h2>
+                                <h3 class="text-sm font-normal text-gray-400 mb-3">Sales Representative</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor aliqua. </p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="450"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-56 w-full md:w-full bg-white shadow-lg rounded-md p-5 flex flex-col items-start justify-start">
+                                <div class="h-12 w-12 rounded-full bg-transparent overflow-hidden flex items-center justify-center">
+                                    <img src="./assets/img/mockup.png" alt="" />
+                                </div>
+                                <h2 class="font-bold text-lg mt-2">Lauren Standford</h2>
+                                <h3 class="text-sm font-normal text-gray-400 mb-3">Sales Representative</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor aliqua. </p>
+                            </div>
+                        </div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"
+                        data-aos-delay="500"
+                        class="swiper-slide h-full max-w-[100%] md:max-w-[30%]">
+                            <div class="h-56 w-full md:w-full bg-white shadow-lg rounded-md p-5 flex flex-col items-start justify-start">
+                                <div class="h-12 w-12 rounded-full bg-transparent overflow-hidden flex items-center justify-center">
+                                    <img src="./assets/img/mockup.png" alt="" />
+                                </div>
+                                <h2 class="font-bold text-lg mt-2">Lauren Standford</h2>
+                                <h3 class="text-sm font-normal text-gray-400 mb-3">Sales Representative</h3>
+                                <p class="text-gray-600">Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod tempor aliqua. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- footer -->
+    <footer id="footer" class="h-auto w-full flex items-center justify-center mt-0 mb-5">
+        <!-- Wrapper -->
+        <div class="h-full w-11/12 md:w-10/12 rounded-md flex flex-col items-center justify-center space-y-5 bg-[#f9f9f9]
+        overflow-hidden py-10">
+            <!-- Inner -->
+            <div class="w-full mx-auto flex flex-col items-center justify-center">
+                <a
+                href="index.html" 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100">
+                    <img alt="" src="./assets/img/logo.png" style="max-width: 75px;" />
+                </a>
+               <p 
+               data-aos="fade-up"
+               data-aos-duration="1000"
+               data-aos-delay="150"
+               class="w-11/12 md:w-5/12 text-[#336699]/70 text-center font-normal my-3 text-md">
+                   Lorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+                class="my-8 flex flex-col md:flex-row items-center justify-center space-x-0 space-y-4 md:space-y-0">
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Terms of Service
+                    </a>
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Privacy Policy
+                    </a>
+                    <a class="md:border-r md:border-[#336699]/20 h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal" href="#" target="_blank" rel="">
+                        Support Service
+                    </a>
+                    <a class="h-5 w-full md:w-32 text-[#336699]/70 
+                    flex items-center justify-center text-md md:text-sm font-normal md:pr-8" href="#" target="_blank" rel="">
+                        Site Map
+                    </a>
+                </div>
+                <div 
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="250"
+                class="my-8 flex items-center justify-center space-x-5">
+                    <i class="la la-facebook cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                    <i class="la la-linkedin cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                    <i class="la la-instagram cursor-pointer h-5 w-12 px-5 text-[#336699]/70 
+                    flex items-center justify-center text-2xl font-normal">
+                    </i>
+                   
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div 
+            data-aos="fade-up"
+            data-aos-offset="10"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            class="w-9/12 md:w-full text-sm text-[#336699]/70 text-center">&copy;Copyright 2022 Debonair Training | All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <!-- scripts -->
+ 
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Counter -->
+    <script src="./lib/countUp/dist/countUp.umd.js"></script>
+
+    <!-- Custom Js -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/drawer.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script src="./assets/js/counter.js"></script>
+</body>
+</html>
