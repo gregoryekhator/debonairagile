@@ -12,7 +12,7 @@
     visibility: collapse;
     height: 0;
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
     transition: all 0.5s ease-in-out;
 }
 .desktopMenu li > div.link-dropdown::before {
@@ -28,7 +28,7 @@
 
 .desktopMenu li:hover > div.link-dropdown {
     visibility: visible;
-    height: 170px;
+    height: 120px;
     opacity: 1;
     pointer-events: all;
 }
