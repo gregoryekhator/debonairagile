@@ -58,3 +58,20 @@
     display: block;
     margin: 0 auto;
 }
+
+/* Mobile Menu */
+#mDropdownList {
+    transform: translateY(-100%);
+    opacity: 0;
+    display: none;
+    /* visibility: collapse; */
+    height: 0;
+    transition: all 0.5s ease-in-out;
+}
+#mDropdownList.active {
+    transform: translateY(0%);
+    opacity: 1;
+    display: block;
+    /* visibility: visible; */
+    height: auto;
+}

@@ -108,33 +108,63 @@
                 <!-- Mobile Menu -->
                 <ul 
                 id="drawer"
-                class="h-full w-full bg-white rounded-md flex flex-col items-center justify-center space-y-5 
+                class="h-auto w-full bg-white rounded-md flex flex-col items-start justify-center space-y-5 px-5 
                 position fixed top-0 right-0 z-100 shadow-lg transform -translate-y-[300%] transition duration-700 hideOnDesktop" 
                 >
                     <!-- Close -->
                     <div class="h-10 w-10 position absolute top-3 right-2 font-medium" id="closeDrawer">
                         <i class="la la-times-circle text-2xl"></i>
                     </div>
-                    <li class="h-auto w-full flex items-center justify-center">
+                    <li class="h-auto w-full flex items-center justify-start position relative">
                         <a 
                         href="../index.html" 
                         target="_self" 
                         rel="noreferrer" 
-                        class="font-normal text-lg text-gray-800 pb-1">Home</a>
+                        class="font-normal text-lg text-[#336699]
+                        border-b-4 border-[#336699] pb-1">Home</a>
                     </li>
-                    <li class="h-auto w-full flex items-center justify-center">
-                        <a href="./about.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-[#336699]
-                        border-b-4 border-[#336699]">About</a>
+                    <li class="h-auto w-full flex items-center justify-start position relative">
+                        <a href="./about.html" target="_self" rel="noreferrer" class="font-normal text-lg text-gray-800">About</a>
                     </li>
-                    <li class="h-auto w-full flex items-center justify-center">
-                        <a href="./solutions.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-gray-800">Solutions</a>
+                    <li class="h-auto w-full flex items-center justify-center position relative">
+                        <div class="h-auto w-full font-normal text-lg text-gray-800 flex flex-col items-start justify-start space-y-3">
+                            <!-- Menu Link Item -->
+                            <div class="h-auto w-full bg-green flex items-center justify-start space-x-5">
+                                <a href="./solutions.html" target="_self" rel="noreferrer">Solutions</a>
+                                <i class="la la-angle-down" id="mDropdownTrigger"></i>
+                            </div>
+
+                            <!-- Dropdown -->
+                            <div class="h-auto w-full flex items-center justify-start" id="mDropdownList">
+                                <ul class="h-full w-full flex flex-col items-start justify-start space-y-2">
+                                    <li class="flex items-center justify-center position relative">
+                                        <a href="./training-school.html" target="_self" rel="noreferrer" class="font-medium text-sm text-gray-800">
+                                            Online Training School
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center justify-center position relative">
+                                        <a href="./consultation.html" target="_self" rel="noreferrer" class="font-medium text-sm text-gray-800">
+                                            Consultation
+                                        </a>
+                                    </li>
+                                    <li class="flex items-center justify-center position relative">
+                                        <a href="./lms.html" target="_self" rel="noreferrer" class="font-medium text-sm text-gray-800">
+                                            Learning Management System
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
-                    <li class="h-auto w-full flex items-center justify-center">
-                        <a href="./resources.html" target="_blank" rel="noreferrer" class="font-normal text-lg text-gray-800">Resources</a>
+                    <li class="h-auto w-full flex items-center justify-start position relative">
+                        <a href="./resources.html" target="_self" rel="noreferrer" class="font-normal text-lg text-gray-800">Resources</a>
                     </li>
-                    <li class="h-auto w-full flex items-center justify-center">
-                        <a href="./contact.html" class="h-10 bg-[#336699] text-white text-lg rounded-md px-10
-                        flex items-center justify-center">Contact Us</a>
+                    <li class="h-auto w-full flex items-center justify-start position relative">
+                        <a href="./contact.html" target="_self" rel="noreferrer" class="font-normal text-lg text-gray-800">Support</a>
+                    </li>
+                    <li class=" relative">
+                        <a href="./contact.html" class="h-10 bg-[#336699] text-white text-lg rounded-md px-8
+                        flex items-center justify-center">Make Inquiry</a>
                     </li>
                 </ul>
             </nav>
