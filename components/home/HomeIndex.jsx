@@ -11,7 +11,7 @@ import FloatingButton from '../globals/FloatingButton'
 import Pagination from '../globals/Pagination'
 
 // Services
-import Storage from '../../services/localstorage.service'
+import Storage from '../../services/storage.service'
 
 const HomeIndex = (props) => {
   const [contacts, setContacts] = useState([]);
@@ -30,16 +30,16 @@ const HomeIndex = (props) => {
 
   useEffect(() => {
     let storage = new Storage();
-    if (storage.getData('contacts')) {
+    if (storage.getData('contacts') && storage.getData('contacts').length > 0) {
       setContacts(storage.getData('contacts'));
       setData(storage.getData('contacts'));
     }
     else {
       setContacts([]);
       setData([]);
-      setInfoMsg('No contacts found');
+      setInfoMsg('No contacts found create a contact to begin');
     }
-  }, [])
+  }, [infoMsg])
 
   return (
     <div className="h-screen w-full bg-gray-50 flex items-start justify-center overflow-hidden">

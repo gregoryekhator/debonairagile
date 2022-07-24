@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class Storage {
     constructor () {
-        this.storage = window.localStorage;
+        this.storage = window.sessionStorage;
     }
 
     getData(key) {

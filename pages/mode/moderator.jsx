@@ -7,7 +7,7 @@ import FloatingButton from '../../components/globals/FloatingButton';
 import Moderator from '../../components/modes/Moderator';
 
 // Services
-import Storage from '../../services/localstorage.service'
+import Storage from '../../services/storage.service'
 
 const ModeratorMode = () => {
   const [contacts, setContacts] = useState([]);
@@ -23,18 +23,17 @@ const ModeratorMode = () => {
   *
   */
   const [mode, setMode] = useState('moderator'); // moderator (default) | editor | admin
-
   
   useEffect(() => {
     let storage = new Storage();
-    if (storage.getData('contacts')) {
+    if (storage.getData('contacts') && storage.getData('contacts').length > 0) {
       setContacts(storage.getData('contacts'));
       setData(storage.getData('contacts'));
     }
     else {
       setContacts([]);
       setData([]);
-      setInfoMsg('No contacts found');
+      setInfoMsg('No contacts found create a contact to begin');
     }
   }, [])
 

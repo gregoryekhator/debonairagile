@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 // NEXT
 import Link from 'next/link';
@@ -34,6 +34,7 @@ const Header = ({updateData, updateMsg, contacts, modeVal, updateMode, dataVal})
       updateData(contacts.slice(0, 5));
       setSearchTerm('');
     }
+    updateMsg('')
     return;
   }
 
@@ -43,34 +44,39 @@ const Header = ({updateData, updateMsg, contacts, modeVal, updateMode, dataVal})
     setSearchTerm('');
   }
 
+  // Effects
+  useEffect(() => {}, [dataVal]);
+
+  // Render
+
   return (
     <header className="h-auto md:h-16 w-full px-3 md:px-2 py-5 md:py-0 bg-black space-y-3 md:space-y-0 
       flex flex-col md:flex-row items-start md:items-center justify-center md:space-x-2">
       {/* Title */}
       <div 
       onClick={() =>history.push('/')}
-      className="h-full w-full md:w-[33.33%] bg-transparent text-white 
+      className="h-full w-full md:w-1/2 bg-transparent text-white 
         flex items-center justify-start font-medium cursor-pointer">
         Debonair Contact App
       </div>
       {/* Form */}
-      <div className="h-full w-full md:w-[33.33%] bg-transparent flex items-center justify-center">
-        <form className="h-full w-full position relative rounded-md flex items-center justify-center">
+      {/* <div className="h-full w-full md:w-[33.33%] bg-transparent flex items-center justify-center"> */}
+        {/* <form className="h-full w-full position relative rounded-md flex items-center justify-center"> */}
           {/* Icon */}
-          <i className="la la-search text-gray-400 text-2xl position absolute top-1 md:top-4 left-3"></i>
+          {/* <i className="la la-search text-gray-400 text-2xl position absolute top-1 md:top-4 left-3"></i> */}
           {/* Form Field */}
-          <input 
+          {/* <input 
             type="text" 
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
             onKeyUp={() => search(searchTerm)}
             onBlur={() => searchToDefault()}
             placeholder="Search name here..." 
-            className="h-10 w-full bg-gray-50 pl-12 p-3 text-sm text-gray-700 focus:outline-none rounded-md" />
-        </form>
-      </div>
+            className="h-10 w-full bg-gray-50 pl-12 p-3 text-sm text-gray-700 focus:outline-none rounded-md" /> */}
+        {/* </form> */}
+      {/* </div> */}
       {/* Actions */}
-      <div className="h-full w-full md:w-[33.33%] bg-transparent flex items-center justify-start md:justify-end space-x-0 divide-x">
+      <div className="h-full w-full md:w-1/2 bg-transparent flex items-center justify-start md:justify-end space-x-0 divide-x">
         <Link href="/mode/moderator">
           <div 
           onClick={() => changeMode('moderator')}
